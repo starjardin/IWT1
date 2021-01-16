@@ -32085,7 +32085,7 @@ var _iconPinterest = _interopRequireDefault(require("../images/icon-pinterest.sv
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top : 4rem;\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    span {\n      visibility : hidden;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top : 4rem;\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  ul {\n    padding : 0;\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n      }\n    }\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    span {\n      visibility : hidden;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

@@ -18,6 +18,16 @@ const FooterStyles = styled.div`
     background-repeat : no-repeat;
   }
 
+  ul {
+    padding : 0;
+    li {
+      list-style : none;
+      a {
+        text-decoration : none;
+      }
+    }
+  }
+
   .facebook {
     background-image : url(${Facebook});
   }
