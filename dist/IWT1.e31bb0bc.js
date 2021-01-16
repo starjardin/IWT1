@@ -32281,7 +32281,34 @@ module.exports = "/image-confetti.08818fb1.jpg";
 module.exports = "/image-plane.a40ba68a.jpg";
 },{}],"images/image-restaurant.jpg":[function(require,module,exports) {
 module.exports = "/image-restaurant.862200da.jpg";
-},{}],"src/LastArticle.js":[function(require,module,exports) {
+},{}],"src/LatestArticleStyles.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.LatestArticleStyles = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  padding : 1.5rem;\n  .card {\n    background-color : hsl(0, 0%, 100%);\n    margin-bottom : 1.5rem;\n    .last-article-img {\n      margin-bottom : 2rem;\n    }\n\n    div {\n      padding : 2rem;\n      .card-heading {\n        font-size : 27px;\n        padding : 1rem 0;\n      }\n      .card-paragraph {\n        margin-bottom : 2rem;\n      }\n    }\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var LatestArticleStyles = _styledComponents.default.div(_templateObject());
+
+exports.LatestArticleStyles = LatestArticleStyles;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/LastArticle.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32298,6 +32325,8 @@ var _imageConfetti = _interopRequireDefault(require("../images/image-confetti.jp
 var _imagePlane = _interopRequireDefault(require("../images/image-plane.jpg"));
 
 var _imageRestaurant = _interopRequireDefault(require("../images/image-restaurant.jpg"));
+
+var _LatestArticleStyles = require("./LatestArticleStyles");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32328,14 +32357,21 @@ var confetti = {
 
 function LastArticle() {
   function LastArticleFunc(params) {
-    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
-      src: params.img
-    }), /*#__PURE__*/_react.default.createElement("small", null, params.postedBy, " "), /*#__PURE__*/_react.default.createElement("h4", null, params.title), /*#__PURE__*/_react.default.createElement("p", null, params.paragraph));
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "card"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: params.img,
+      className: "last-article-img"
+    }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("small", null, params.postedBy, " "), /*#__PURE__*/_react.default.createElement("h4", {
+      className: "card-heading"
+    }, params.title), /*#__PURE__*/_react.default.createElement("p", {
+      className: "card-paragraph"
+    }, params.paragraph)));
   }
 
-  return /*#__PURE__*/_react.default.createElement("div", null, LastArticleFunc(currency), LastArticleFunc(restaurant), LastArticleFunc(plane), LastArticleFunc(confetti));
+  return /*#__PURE__*/_react.default.createElement(_LatestArticleStyles.LatestArticleStyles, null, LastArticleFunc(currency), LastArticleFunc(restaurant), LastArticleFunc(plane), LastArticleFunc(confetti));
 }
-},{"react":"node_modules/react/index.js","../images/image-currency.jpg":"images/image-currency.jpg","../images/image-confetti.jpg":"images/image-confetti.jpg","../images/image-plane.jpg":"images/image-plane.jpg","../images/image-restaurant.jpg":"images/image-restaurant.jpg"}],"images/image-mockups.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../images/image-currency.jpg":"images/image-currency.jpg","../images/image-confetti.jpg":"images/image-confetti.jpg","../images/image-plane.jpg":"images/image-plane.jpg","../images/image-restaurant.jpg":"images/image-restaurant.jpg","./LatestArticleStyles":"src/LatestArticleStyles.js"}],"images/image-mockups.png":[function(require,module,exports) {
 module.exports = "/image-mockups.82980908.png";
 },{}],"src/Masthead.js":[function(require,module,exports) {
 "use strict";

@@ -1,8 +1,10 @@
 import React from 'react'
+
 import Currency from '../images/image-currency.jpg'
 import Confetti from '../images/image-confetti.jpg'
 import Plane from '../images/image-plane.jpg'
 import Restaurant from '../images/image-restaurant.jpg'
+import { LatestArticleStyles } from "./LatestArticleStyles"
 
 const currency = {
   img: Currency,
@@ -34,20 +36,22 @@ const confetti = {
 export default function LastArticle() {
 
   function LastArticleFunc(params) {
-    return <div>
-      <img src={ params.img}/>
-      <small>{ params.postedBy } </small>
-      <h4>{ params.title }</h4>
-      <p>{ params.paragraph }</p>
+    return <div className="card">
+      <img src={params.img} className="last-article-img" />
+      <div>
+        <small>{ params.postedBy } </small>
+        <h4 className="card-heading">{ params.title }</h4>
+        <p className="card-paragraph">{ params.paragraph }</p>
+      </div>
     </div>
   }
 
   return (
-    <div>
+    <LatestArticleStyles>
      {LastArticleFunc(currency)} 
      {LastArticleFunc(restaurant)} 
      {LastArticleFunc(plane)} 
      {LastArticleFunc(confetti)} 
-    </div>
+    </LatestArticleStyles>
   )
 }
