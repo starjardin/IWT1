@@ -29772,7 +29772,70 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/logo.svg":[function(require,module,exports) {
+module.exports = "/logo.236e4034.svg";
+},{}],"images/icon-facebook.svg":[function(require,module,exports) {
+module.exports = "/icon-facebook.db88fd38.svg";
+},{}],"images/icon-youtube.svg":[function(require,module,exports) {
+module.exports = "/icon-youtube.8e30d3e6.svg";
+},{}],"images/icon-twitter.svg":[function(require,module,exports) {
+module.exports = "/icon-twitter.9dcd00ee.svg";
+},{}],"images/icon-instagram.svg":[function(require,module,exports) {
+module.exports = "/icon-instagram.55128b72.svg";
+},{}],"images/icon-pinterest.svg":[function(require,module,exports) {
+module.exports = "/icon-pinterest.6b47e241.svg";
+},{}],"src/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Footer;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _logo = _interopRequireDefault(require("../images/logo.svg"));
+
+var _iconFacebook = _interopRequireDefault(require("../images/icon-facebook.svg"));
+
+var _iconYoutube = _interopRequireDefault(require("../images/icon-youtube.svg"));
+
+var _iconTwitter = _interopRequireDefault(require("../images/icon-twitter.svg"));
+
+var _iconInstagram = _interopRequireDefault(require("../images/icon-instagram.svg"));
+
+var _iconPinterest = _interopRequireDefault(require("../images/icon-pinterest.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Footer() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", null), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/facebook"
+  }, "facebook")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/youtube"
+  }, "Youtube")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/twitter"
+  }, "Twitter")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/pinterest"
+  }, "Pinterest")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/instagram"
+  }, "Instagram")))), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/about-us"
+  }, "About Us")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/contact"
+  }, "Contact")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/blog"
+  }, "Blog")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/careers"
+  }, "Careers")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/support"
+  }, "Support")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/privacy-policy"
+  }, "Privacy Policy")))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+    type: "button"
+  }, "Request Invite")));
+}
+},{"react":"node_modules/react/index.js","../images/logo.svg":"images/logo.svg","../images/icon-facebook.svg":"images/icon-facebook.svg","../images/icon-youtube.svg":"images/icon-youtube.svg","../images/icon-twitter.svg":"images/icon-twitter.svg","../images/icon-instagram.svg":"images/icon-instagram.svg","../images/icon-pinterest.svg":"images/icon-pinterest.svg"}],"node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
 /** @license React v16.13.1
  * react-is.development.js
  *
@@ -32046,9 +32109,7 @@ exports.ServerStyleSheet = Ue;
 "production" !== "development" && "undefined" != typeof navigator && "ReactNative" === navigator.product && console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://www.styled-components.com/docs/basics#react-native"), "production" !== "development" && "test" !== "development" && (window["__styled-components-init__"] = window["__styled-components-init__"] || 0, 1 === window["__styled-components-init__"] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window["__styled-components-init__"] += 1);
 var _default = qe;
 exports.default = _default;
-},{"react-is":"node_modules/react-is/index.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","@emotion/stylis":"node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","hoist-non-react-statics":"node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"../../../AppData/Roaming/npm/node_modules/parcel/node_modules/process/browser.js"}],"images/logo.svg":[function(require,module,exports) {
-module.exports = "/logo.236e4034.svg";
-},{}],"images/icon-close.svg":[function(require,module,exports) {
+},{"react-is":"node_modules/react-is/index.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","@emotion/stylis":"node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","hoist-non-react-statics":"node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"../../../AppData/Roaming/npm/node_modules/parcel/node_modules/process/browser.js"}],"images/icon-close.svg":[function(require,module,exports) {
 module.exports = "/icon-close.1add023a.svg";
 },{}],"src/MobileNavigation.js":[function(require,module,exports) {
 "use strict";
@@ -32186,7 +32247,69 @@ function Header() {
     }
   }, "open"))));
 }
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/logo.svg":"images/logo.svg","./MobileNavigation":"src/MobileNavigation.js"}],"images/image-mockups.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/logo.svg":"images/logo.svg","./MobileNavigation":"src/MobileNavigation.js"}],"images/image-currency.jpg":[function(require,module,exports) {
+module.exports = "/image-currency.a4ddfb91.jpg";
+},{}],"images/image-confetti.jpg":[function(require,module,exports) {
+module.exports = "/image-confetti.08818fb1.jpg";
+},{}],"images/image-plane.jpg":[function(require,module,exports) {
+module.exports = "/image-plane.a40ba68a.jpg";
+},{}],"images/image-restaurant.jpg":[function(require,module,exports) {
+module.exports = "/image-restaurant.862200da.jpg";
+},{}],"src/LastArticle.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = LastArticle;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _imageCurrency = _interopRequireDefault(require("../images/image-currency.jpg"));
+
+var _imageConfetti = _interopRequireDefault(require("../images/image-confetti.jpg"));
+
+var _imagePlane = _interopRequireDefault(require("../images/image-plane.jpg"));
+
+var _imageRestaurant = _interopRequireDefault(require("../images/image-restaurant.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var currency = {
+  img: _imageCurrency.default,
+  postedBy: "Claire Robinson",
+  title: "Receive money in any currency with no fees",
+  paragraph: "Latest Articles By   The world is getting smaller and we\u2019re becoming more mobile. So why should you be forced to only receive money in a single \u2026 "
+};
+var restaurant = {
+  img: _imageRestaurant.default,
+  postedBy: "By Wilson Hutton",
+  paragraph: " Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you \u2026",
+  title: "Treat yourself without worrying about money"
+};
+var plane = {
+  img: _imagePlane.default,
+  title: "Take your Easybank card wherever you go",
+  paragraph: "We want you to enjoy your travels. This is why we don\u2019t charge any fees on purchases while you\u2019re abroad. We\u2019ll even show you \u2026 ",
+  postedBy: "By Wilson Hutton"
+};
+var confetti = {
+  img: _imageConfetti.default,
+  title: "Our invite-only Beta accounts are now live!",
+  postedBy: "By Claire Robinson",
+  paragraph: "After a lot of hard work by the whole team, we\u2019re excited to launch our closed beta. It\u2019s easy to request an invite through the site .."
+};
+
+function LastArticle() {
+  function LastArticleFunc(params) {
+    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+      src: params.img
+    }), /*#__PURE__*/_react.default.createElement("small", null, params.postedBy, " "), /*#__PURE__*/_react.default.createElement("h4", null, params.title), /*#__PURE__*/_react.default.createElement("p", null, params.paragraph));
+  }
+
+  return /*#__PURE__*/_react.default.createElement("div", null, LastArticleFunc(currency), LastArticleFunc(restaurant), LastArticleFunc(plane), LastArticleFunc(confetti));
+}
+},{"react":"node_modules/react/index.js","../images/image-currency.jpg":"images/image-currency.jpg","../images/image-confetti.jpg":"images/image-confetti.jpg","../images/image-plane.jpg":"images/image-plane.jpg","../images/image-restaurant.jpg":"images/image-restaurant.jpg"}],"images/image-mockups.png":[function(require,module,exports) {
 module.exports = "/image-mockups.82980908.png";
 },{}],"src/Masthead.js":[function(require,module,exports) {
 "use strict";
@@ -32332,7 +32455,11 @@ exports.default = App;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Footer = _interopRequireDefault(require("./src/Footer"));
+
 var _Header = _interopRequireDefault(require("./src/Header"));
+
+var _LastArticle = _interopRequireDefault(require("./src/LastArticle"));
 
 var _Masthead = _interopRequireDefault(require("./src/Masthead"));
 
@@ -32341,9 +32468,9 @@ var _WhyChooseEasybank = _interopRequireDefault(require("./src/WhyChooseEasybank
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Masthead.default, null), /*#__PURE__*/_react.default.createElement(_WhyChooseEasybank.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Masthead.default, null), /*#__PURE__*/_react.default.createElement(_WhyChooseEasybank.default, null), /*#__PURE__*/_react.default.createElement(_LastArticle.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 }
-},{"react":"node_modules/react/index.js","./src/Header":"src/Header.js","./src/Masthead":"src/Masthead.js","./src/WhyChooseEasybank":"src/WhyChooseEasybank.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./src/Footer":"src/Footer.js","./src/Header":"src/Header.js","./src/LastArticle":"src/LastArticle.js","./src/Masthead":"src/Masthead.js","./src/WhyChooseEasybank":"src/WhyChooseEasybank.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -32383,7 +32510,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59661" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51892" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
