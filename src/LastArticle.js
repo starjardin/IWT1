@@ -47,11 +47,14 @@ export default function LastArticle() {
   }
 
   return (
-    <LatestArticleStyles>
-     {LastArticleFunc(currency)} 
-     {LastArticleFunc(restaurant)} 
-     {LastArticleFunc(plane)} 
-     {LastArticleFunc(confetti)} 
-    </LatestArticleStyles>
+    <>
+      {/* <h2>Latest Articles</h2> */}
+      <LatestArticleStyles>
+        {LastArticleFunc(currency)} 
+        {LastArticleFunc(restaurant)} 
+        {LastArticleFunc(plane)} 
+        {LastArticleFunc(confetti)} 
+      </LatestArticleStyles>
+    </>
   )
 }
