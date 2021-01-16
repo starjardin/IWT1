@@ -32099,7 +32099,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var FooterStyles = _styledComponents.default.div(_templateObject(), _iconFacebook.default, _iconYoutube.default, _iconTwitter.default, _iconPinterest.default, _iconInstagram.default);
 
 function Footer() {
-  return /*#__PURE__*/_react.default.createElement(FooterStyles, null, /*#__PURE__*/_react.default.createElement("img", null), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", {
+  return /*#__PURE__*/_react.default.createElement(FooterStyles, null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _logo.default,
+    alt: "logo"
+  }), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", {
     className: "icon-navigations"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "/facebook",
@@ -32402,7 +32405,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color: hsl(220, 16%, 96%);\n\n  h4 {\n    padding-block: 1rem;\n  }\n\n  img  {\n    width: 3rem;\n    height: 3rem;\n  }\n\n  p {\n    color: hsl(233, 8%, 62%);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: hsl(220, 16%, 96%);\n  text-align : center;\n  padding : 5rem 1rem;\n\n  .heading {\n    font-size : 27px;\n  }\n\n  .heading, .title{\n    color : hsl(233, 26%, 24%);\n    padding-block: 1rem;\n  }\n\n  img  {\n    width: 3rem;\n    height: 3rem;\n    margin : auto;\n  }\n\n  .paragraph {\n    color: hsl(233, 8%, 62%);\n    margin : 0 0 2rem 0;\n    font-size : 18px;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32463,10 +32466,18 @@ function WhyChooseEasybank() {
   function ResonsToChooseEasybank(params) {
     return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
       src: params.img
-    }), /*#__PURE__*/_react.default.createElement("h4", null, params.title), /*#__PURE__*/_react.default.createElement("p", null, params.description));
+    }), /*#__PURE__*/_react.default.createElement("h4", {
+      className: "title"
+    }, params.title), /*#__PURE__*/_react.default.createElement("p", {
+      className: "paragraph"
+    }, params.description));
   }
 
-  return /*#__PURE__*/_react.default.createElement(_WhyChooseEasybankStyles.WhyChooseEasybankStyles, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h3", null, "Why choose Easybank"), /*#__PURE__*/_react.default.createElement("p", null, "We leverage Open Banking to turn your bank accoutn into finacial hub. Control your finacise loke never before.")), /*#__PURE__*/_react.default.createElement("div", null, ResonsToChooseEasybank(onlineBanking), ResonsToChooseEasybank(simpleBudgeting), ResonsToChooseEasybank(fastOnBoarding), ResonsToChooseEasybank(openApi)));
+  return /*#__PURE__*/_react.default.createElement(_WhyChooseEasybankStyles.WhyChooseEasybankStyles, null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "heading"
+  }, "Why choose Easybank"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "paragraph"
+  }, "We leverage Open Banking to turn your bank accoutn into finacial hub. Control your finacise loke never before.")), /*#__PURE__*/_react.default.createElement("div", null, ResonsToChooseEasybank(onlineBanking), ResonsToChooseEasybank(simpleBudgeting), ResonsToChooseEasybank(fastOnBoarding), ResonsToChooseEasybank(openApi)));
 }
 },{"react":"node_modules/react/index.js","../images/icon-online.svg":"images/icon-online.svg","../images/icon-budgeting.svg":"images/icon-budgeting.svg","../images/icon-onboarding.svg":"images/icon-onboarding.svg","../images/icon-api.svg":"images/icon-api.svg","./WhyChooseEasybankStyles":"src/WhyChooseEasybankStyles.js"}],"App.js":[function(require,module,exports) {
 "use strict";

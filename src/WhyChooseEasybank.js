@@ -32,16 +32,16 @@ export default function WhyChooseEasybank() {
   function ResonsToChooseEasybank (params) {
     return <div>
       <img src={ params.img }/>
-      <h4>{ params.title }</h4>
-      <p>{ params.description }</p>
+      <h4 className="title">{ params.title }</h4>
+      <p className="paragraph">{ params.description }</p>
     </div>
   }
 
   return (
     <WhyChooseEasybankStyles>
       <header>
-        <h3>Why choose Easybank</h3>
-        <p>
+        <h3 className="heading">Why choose Easybank</h3>
+        <p className="paragraph">
           We leverage Open Banking to turn your bank accoutn into finacial hub. Control your finacise loke never before.
         </p>
       </header>

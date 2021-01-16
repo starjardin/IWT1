@@ -55,7 +55,7 @@ const FooterStyles = styled.div`
 export default function Footer() {
   return (
     <FooterStyles>
-      <img />
+      <img src={Logo} alt="logo" />
       <nav>
         <ul className="icon-navigations">
           <li>
