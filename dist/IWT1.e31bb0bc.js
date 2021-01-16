@@ -29772,70 +29772,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/logo.svg":[function(require,module,exports) {
-module.exports = "/logo.236e4034.svg";
-},{}],"images/icon-facebook.svg":[function(require,module,exports) {
-module.exports = "/icon-facebook.db88fd38.svg";
-},{}],"images/icon-youtube.svg":[function(require,module,exports) {
-module.exports = "/icon-youtube.8e30d3e6.svg";
-},{}],"images/icon-twitter.svg":[function(require,module,exports) {
-module.exports = "/icon-twitter.9dcd00ee.svg";
-},{}],"images/icon-instagram.svg":[function(require,module,exports) {
-module.exports = "/icon-instagram.55128b72.svg";
-},{}],"images/icon-pinterest.svg":[function(require,module,exports) {
-module.exports = "/icon-pinterest.6b47e241.svg";
-},{}],"src/Footer.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Footer;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _logo = _interopRequireDefault(require("../images/logo.svg"));
-
-var _iconFacebook = _interopRequireDefault(require("../images/icon-facebook.svg"));
-
-var _iconYoutube = _interopRequireDefault(require("../images/icon-youtube.svg"));
-
-var _iconTwitter = _interopRequireDefault(require("../images/icon-twitter.svg"));
-
-var _iconInstagram = _interopRequireDefault(require("../images/icon-instagram.svg"));
-
-var _iconPinterest = _interopRequireDefault(require("../images/icon-pinterest.svg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Footer() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", null), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/facebook"
-  }, "facebook")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/youtube"
-  }, "Youtube")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/twitter"
-  }, "Twitter")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/pinterest"
-  }, "Pinterest")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/instagram"
-  }, "Instagram")))), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/about-us"
-  }, "About Us")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/contact"
-  }, "Contact")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/blog"
-  }, "Blog")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/careers"
-  }, "Careers")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/support"
-  }, "Support")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/privacy-policy"
-  }, "Privacy Policy")))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
-    type: "button"
-  }, "Request Invite")));
-}
-},{"react":"node_modules/react/index.js","../images/logo.svg":"images/logo.svg","../images/icon-facebook.svg":"images/icon-facebook.svg","../images/icon-youtube.svg":"images/icon-youtube.svg","../images/icon-twitter.svg":"images/icon-twitter.svg","../images/icon-instagram.svg":"images/icon-instagram.svg","../images/icon-pinterest.svg":"images/icon-pinterest.svg"}],"node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
 /** @license React v16.13.1
  * react-is.development.js
  *
@@ -32109,7 +32046,93 @@ exports.ServerStyleSheet = Ue;
 "production" !== "development" && "undefined" != typeof navigator && "ReactNative" === navigator.product && console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://www.styled-components.com/docs/basics#react-native"), "production" !== "development" && "test" !== "development" && (window["__styled-components-init__"] = window["__styled-components-init__"] || 0, 1 === window["__styled-components-init__"] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window["__styled-components-init__"] += 1);
 var _default = qe;
 exports.default = _default;
-},{"react-is":"node_modules/react-is/index.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","@emotion/stylis":"node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","hoist-non-react-statics":"node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"../../../AppData/Roaming/npm/node_modules/parcel/node_modules/process/browser.js"}],"images/icon-close.svg":[function(require,module,exports) {
+},{"react-is":"node_modules/react-is/index.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","@emotion/stylis":"node_modules/@emotion/stylis/dist/stylis.browser.esm.js","@emotion/unitless":"node_modules/@emotion/unitless/dist/unitless.browser.esm.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","hoist-non-react-statics":"node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","process":"../../../AppData/Roaming/npm/node_modules/parcel/node_modules/process/browser.js"}],"images/logo.svg":[function(require,module,exports) {
+module.exports = "/logo.236e4034.svg";
+},{}],"images/icon-facebook.svg":[function(require,module,exports) {
+module.exports = "/icon-facebook.db88fd38.svg";
+},{}],"images/icon-youtube.svg":[function(require,module,exports) {
+module.exports = "/icon-youtube.8e30d3e6.svg";
+},{}],"images/icon-twitter.svg":[function(require,module,exports) {
+module.exports = "/icon-twitter.9dcd00ee.svg";
+},{}],"images/icon-instagram.svg":[function(require,module,exports) {
+module.exports = "/icon-instagram.55128b72.svg";
+},{}],"images/icon-pinterest.svg":[function(require,module,exports) {
+module.exports = "/icon-pinterest.6b47e241.svg";
+},{}],"src/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Footer;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _logo = _interopRequireDefault(require("../images/logo.svg"));
+
+var _iconFacebook = _interopRequireDefault(require("../images/icon-facebook.svg"));
+
+var _iconYoutube = _interopRequireDefault(require("../images/icon-youtube.svg"));
+
+var _iconTwitter = _interopRequireDefault(require("../images/icon-twitter.svg"));
+
+var _iconInstagram = _interopRequireDefault(require("../images/icon-instagram.svg"));
+
+var _iconPinterest = _interopRequireDefault(require("../images/icon-pinterest.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top : 4rem;\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    span {\n      visibility : hidden;\n    }\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var FooterStyles = _styledComponents.default.div(_templateObject(), _iconFacebook.default, _iconYoutube.default, _iconTwitter.default, _iconPinterest.default, _iconInstagram.default);
+
+function Footer() {
+  return /*#__PURE__*/_react.default.createElement(FooterStyles, null, /*#__PURE__*/_react.default.createElement("img", null), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "icon-navigations"
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/facebook",
+    className: "icon facebook"
+  }, /*#__PURE__*/_react.default.createElement("span", null, "facebook"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/youtube",
+    className: "icon youtube"
+  }, /*#__PURE__*/_react.default.createElement("span", null, "Youtube"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/twitter",
+    className: "icon twitter"
+  }, /*#__PURE__*/_react.default.createElement("span", null, "Twitter"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/pinterest",
+    className: "icon pinterest"
+  }, /*#__PURE__*/_react.default.createElement("span", null, "Pinterest"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/instagram",
+    className: "icon instagram"
+  }, /*#__PURE__*/_react.default.createElement("span", null, "Instagram"))))), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/about-us"
+  }, "About Us")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/contact"
+  }, "Contact")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/blog"
+  }, "Blog")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/careers"
+  }, "Careers")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/support"
+  }, "Support")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/privacy-policy"
+  }, "Privacy Policy")))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+    type: "button"
+  }, "Request Invite")));
+}
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/logo.svg":"images/logo.svg","../images/icon-facebook.svg":"images/icon-facebook.svg","../images/icon-youtube.svg":"images/icon-youtube.svg","../images/icon-twitter.svg":"images/icon-twitter.svg","../images/icon-instagram.svg":"images/icon-instagram.svg","../images/icon-pinterest.svg":"images/icon-pinterest.svg"}],"images/icon-close.svg":[function(require,module,exports) {
 module.exports = "/icon-close.1add023a.svg";
 },{}],"src/MobileNavigation.js":[function(require,module,exports) {
 "use strict";
