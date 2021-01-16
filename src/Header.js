@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { IoMenuOutline } from "react-icons/io"
 
 import Logo from '../images/logo.svg'
 import MobileNavigation from './MobileNavigation'
@@ -18,7 +19,9 @@ export const HeaderStyles = styled.div`
 
   .navigation {
     cursor : pointer;
-    color : red;
+    span {
+      visibility : hidden;
+    }
   }
 `
 export default function Header() {
@@ -36,12 +39,12 @@ export default function Header() {
               className="header"
             >
                 <img src={Logo} className="header-img"/>
-              <span
+              <p
                 className="navigation"
                 onClick={() => { setIsNavigationOpen(!isNavigationOpen) }}
               >
                 open
-              </span>
+              </p>
             </HeaderStyles>
         }
       </div>
