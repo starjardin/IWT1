@@ -25,4 +25,19 @@ export const WhyChooseEasybankStyles = styled.div`
     margin : 0 0 2rem 0;
     font-size : 18px;
   }
+
+  @media (min-width : 1444px) {
+    text-align : start;
+    .why-we-choose-container {
+      display : flex;
+      padding : 1.5rem;
+      gap : 2rem;
+      img {
+        margin : 0;
+      }
+    }
+  }
+  .header {
+    max-width : 545px;
+  }
 `
