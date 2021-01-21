@@ -32085,7 +32085,7 @@ var _iconPinterest = _interopRequireDefault(require("../images/icon-pinterest.sv
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top : 4rem;\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  ul {\n    padding : 0;\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n      }\n    }\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    span {\n      visibility : hidden;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top: 48px;\n  text-align : center;\n  img {\n    width : 20%;\n    margin : auto;\n    filter : brightness(0) invert(1);\n    padding-bottom : 35px;\n  }\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  ul {\n    padding : 0 0 48px 0;\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n        color: hsl(0, 0%, 100%);\n        font-style: 16px;\n        padding : 5px;\n        display : inline-block;\n        font-weight : 600;\n        cursor: pointer;\n      }\n      \n      a:hover {\n        background-color : hsl(233, 56%, 24%);\n        color : hsl(0, 10%, 70%);\n        transform : scale(1.1)\n      }\n    }\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    justify-content: center;\n    padding-bottom : 20px;\n    span {\n      visibility : hidden;\n    }\n  }\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n  }\n  \n  @media (min-width : 1000px) {\n    display : grid;\n    grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32102,7 +32102,32 @@ function Footer() {
   return /*#__PURE__*/_react.default.createElement(FooterStyles, null, /*#__PURE__*/_react.default.createElement("img", {
     src: _logo.default,
     alt: "logo"
-  }), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", {
+  }), /*#__PURE__*/_react.default.createElement(IconNavigation, null), /*#__PURE__*/_react.default.createElement(TextNavigation, null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+    type: "button",
+    className: "request"
+  }, "Request Invite")));
+}
+
+var TextNavigation = function TextNavigation() {
+  return /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "anchor-texts"
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/about-us"
+  }, "About Us")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/contact"
+  }, "Contact")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/blog"
+  }, "Blog")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/careers"
+  }, "Careers")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/support"
+  }, "Support")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/privacy-policy"
+  }, "Privacy Policy"))));
+};
+
+var IconNavigation = function IconNavigation() {
+  return /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", {
     className: "icon-navigations"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "/facebook",
@@ -32119,22 +32144,8 @@ function Footer() {
   }, /*#__PURE__*/_react.default.createElement("span", null, "Pinterest"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "/instagram",
     className: "icon instagram"
-  }, /*#__PURE__*/_react.default.createElement("span", null, "Instagram"))))), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/about-us"
-  }, "About Us")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/contact"
-  }, "Contact")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/blog"
-  }, "Blog")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/careers"
-  }, "Careers")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/support"
-  }, "Support")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "/privacy-policy"
-  }, "Privacy Policy")))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
-    type: "button"
-  }, "Request Invite")));
-}
+  }, /*#__PURE__*/_react.default.createElement("span", null, "Instagram")))));
+};
 },{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/logo.svg":"images/logo.svg","../images/icon-facebook.svg":"images/icon-facebook.svg","../images/icon-youtube.svg":"images/icon-youtube.svg","../images/icon-twitter.svg":"images/icon-twitter.svg","../images/icon-instagram.svg":"images/icon-instagram.svg","../images/icon-pinterest.svg":"images/icon-pinterest.svg"}],"node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
 "use strict";
 
@@ -46377,7 +46388,9 @@ function LastArticle() {
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_LatestArticleStyles.LatestArticleStyles, null, LastArticleFunc(currency), LastArticleFunc(restaurant), LastArticleFunc(plane), LastArticleFunc(confetti)));
 }
-},{"react":"node_modules/react/index.js","../images/image-currency.jpg":"images/image-currency.jpg","../images/image-confetti.jpg":"images/image-confetti.jpg","../images/image-plane.jpg":"images/image-plane.jpg","../images/image-restaurant.jpg":"images/image-restaurant.jpg","./LatestArticleStyles":"src/LatestArticleStyles.js"}],"images/image-mockups.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../images/image-currency.jpg":"images/image-currency.jpg","../images/image-confetti.jpg":"images/image-confetti.jpg","../images/image-plane.jpg":"images/image-plane.jpg","../images/image-restaurant.jpg":"images/image-restaurant.jpg","./LatestArticleStyles":"src/LatestArticleStyles.js"}],"images/bg-intro-mobile.svg":[function(require,module,exports) {
+module.exports = "/bg-intro-mobile.2783d013.svg";
+},{}],"images/image-mockups.png":[function(require,module,exports) {
 module.exports = "/image-mockups.82980908.png";
 },{}],"src/Masthead.js":[function(require,module,exports) {
 "use strict";
@@ -46391,12 +46404,14 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+var _bgIntroMobile = _interopRequireDefault(require("../images/bg-intro-mobile.svg"));
+
 var _imageMockups = _interopRequireDefault(require("../images/image-mockups.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-30%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n  }\n\n  @media (min-width : 1444px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-29%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n  }\n\n  .masthead-header {\n    background-image : url(", ");\n    background-repeat : no-repeat;\n    background-position : top;\n    background-size : 100% 53%;\n  }\n\n  @media (min-width : 1444px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46407,7 +46422,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var MastheadStyles = _styledComponents.default.div(_templateObject());
+var MastheadStyles = _styledComponents.default.div(_templateObject(), _bgIntroMobile.default);
 
 function Masthead() {
   return /*#__PURE__*/_react.default.createElement(MastheadStyles, {
@@ -46426,7 +46441,7 @@ function Masthead() {
     className: "btn request"
   }, "Request invite"))));
 }
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/image-mockups.png":"images/image-mockups.png"}],"images/icon-online.svg":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/bg-intro-mobile.svg":"images/bg-intro-mobile.svg","../images/image-mockups.png":"images/image-mockups.png"}],"images/icon-online.svg":[function(require,module,exports) {
 module.exports = "/icon-online.8662f84e.svg";
 },{}],"images/icon-budgeting.svg":[function(require,module,exports) {
 module.exports = "/icon-budgeting.79afbef5.svg";
@@ -46590,7 +46605,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55137" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62495" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
