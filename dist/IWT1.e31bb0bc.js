@@ -32085,7 +32085,7 @@ var _iconPinterest = _interopRequireDefault(require("../images/icon-pinterest.sv
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top: 48px;\n  text-align : center;\n  img {\n    width : 20%;\n    margin : auto;\n    filter : brightness(0) invert(1);\n    padding-bottom : 35px;\n  }\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  ul {\n    padding : 0 0 48px 0;\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n        color: hsl(0, 0%, 100%);\n        font-style: 16px;\n        padding : 5px;\n        display : inline-block;\n        font-weight : 600;\n        cursor: pointer;\n      }\n      \n      a:hover {\n        background-color : hsl(233, 56%, 24%);\n        color : hsl(0, 10%, 70%);\n        transform : scale(1.1)\n      }\n    }\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    justify-content: center;\n    padding-bottom : 20px;\n    span {\n      visibility : hidden;\n    }\n  }\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n  }\n  \n  @media (min-width : 1000px) {\n    display : grid;\n    grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top: 48px;\n  text-align : center;\n  img {\n    width : 20%;\n    margin : auto;\n    filter : brightness(0) invert(1);\n    padding-bottom : 35px;\n  }\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  ul {\n    padding : 0 0 48px 0;\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n        color: hsl(0, 0%, 100%);\n        font-style: 16px;\n        padding : 5px;\n        display : inline-block;\n        font-weight : 600;\n        cursor: pointer;\n      }\n      \n      a:hover {\n        background-color : hsl(233, 56%, 24%);\n        color : hsl(0, 10%, 70%);\n        transform : scale(1.1)\n      }\n    }\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    justify-content: center;\n    padding-bottom : 20px;\n    span {\n      visibility : hidden;\n    }\n  }\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n    cursor: pointer;\n    transition : .5s ease;\n    &:hover {\n      background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n      transform : scale(1.1)\n    }\n  }\n  \n  @media (min-width : 1000px) {\n    display : grid;\n    grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46172,8 +46172,18 @@ var _Header = require("./Header");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  img {\n    width : 1rem;\n    height : 1rem;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position : fixed;\n  background-color : #fff;\n  width : 80%;\n  z-index : 6;\n  text-align : center;\n  transform : translateX(50%);\n  right : 50%;\n  ul {\n    padding : 0;\n\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n        display : inline-block;\n        padding : 0.5rem;\n        text-transform : capitalize;\n      }\n    }\n  }\n\n  @media (min-width : 720px) {\n    position : initial;\n    ul {\n      display : flex;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position : fixed;\n  background-color : #fff;\n  width : 80%;\n  z-index : 6;\n  text-align : center;\n  transform : translateX(50%);\n  right : 50%;\n  ul {\n    padding : 0;\n\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n        display : inline-block;\n        padding : 0.5rem;\n        text-transform : capitalize;\n      }\n    }\n  }\n    \n  @media (min-width : 720px) {\n    position : initial;\n    transform : none;\n    \n    ul {\n      display : flex !important;\n      justify-content : flex-end;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46186,23 +46196,30 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var MobileNavigationStyles = _styledComponents.default.nav(_templateObject());
 
+var IcocCloseStyles = _styledComponents.default.div(_templateObject2());
+
 function MobileNavigation(_ref) {
   var setIsNavigationOpen = _ref.setIsNavigationOpen,
-      isNavigationOpen = _ref.isNavigationOpen;
-  console.log(isNavigationOpen);
+      isNavigationOpen = _ref.isNavigationOpen,
+      display = _ref.display;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.HeaderStyles, {
     className: "header"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: _logo.default,
     className: "header-img"
-  }), /*#__PURE__*/_react.default.createElement("span", {
+  }), /*#__PURE__*/_react.default.createElement(IcocCloseStyles, {
     className: "navigation",
     onClick: function onClick() {
       setIsNavigationOpen(!isNavigationOpen);
     }
   }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _iconClose.default
-  }))), /*#__PURE__*/_react.default.createElement(MobileNavigationStyles, null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    src: _iconClose.default,
+    className: "icon-close"
+  }))), /*#__PURE__*/_react.default.createElement(MobileNavigationStyles, null, /*#__PURE__*/_react.default.createElement("ul", {
+    style: {
+      display: isNavigationOpen ? 'block' : 'none'
+    }
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "/"
   }, "Home")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "/about"
@@ -46252,7 +46269,7 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : #fff;\n  z-index : 5;\n  position : relative;\n  display : flex;\n  justify-content : space-between;\n  padding : 1rem;\n\n  .header-img {\n    width : 50%;\n  }\n\n  .navigation {\n    cursor : pointer;\n    span {\n      visibility : hidden;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : #fff;\n  z-index : 5;\n  position : relative;\n  display : flex;\n  justify-content : space-between;\n  padding : 1rem;\n  align-items : center;\n\n  .header-img {\n    width : 50%;\n  }\n\n  .navigation {\n    cursor : pointer;\n    span {\n      visibility : hidden;\n    }\n  }\n  \n  .header {\n    display: none;\n  }\n    \n  @media (min-width : 700px) {\n    .navigation {\n      display: none;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46288,7 +46305,11 @@ function Header() {
     onClick: function onClick() {
       setIsNavigationOpen(!isNavigationOpen);
     }
-  }, "open"))));
+  }, "open"), /*#__PURE__*/_react.default.createElement(_MobileNavigation.default, {
+    setIsNavigationOpen: setIsNavigationOpen,
+    isNavigationOpen: isNavigationOpen,
+    display: isNavigationOpen ? "none" : "block"
+  }))));
 }
 },{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","react-icons/io":"node_modules/react-icons/io/index.esm.js","../images/logo.svg":"images/logo.svg","./MobileNavigation":"src/MobileNavigation.js"}],"images/image-currency.jpg":[function(require,module,exports) {
 module.exports = "/image-currency.a4ddfb91.jpg";
@@ -46411,7 +46432,7 @@ var _imageMockups = _interopRequireDefault(require("../images/image-mockups.png"
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-29%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n  }\n\n  .masthead-header {\n    background-image : url(", ");\n    background-repeat : no-repeat;\n    background-position : top;\n    background-size : 100% 53%;\n  }\n\n  @media (min-width : 1444px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-29%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n    cursor: pointer;\n    transition : .5s ease;\n    &:hover {\n      background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n      transform : scale(1.1)\n    }\n  }\n\n  .masthead-header {\n    background-image : url(", ");\n    background-repeat : no-repeat;\n    background-position : top;\n    background-size : 100% 53%;\n  }\n\n  @media (min-width : 1444px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46605,7 +46626,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62495" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55065" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

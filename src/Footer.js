@@ -78,6 +78,12 @@ const FooterStyles = styled.div`
     border : none;
     border-radius : 25px;
     margin : 2rem 0;
+    cursor: pointer;
+    transition : .5s ease;
+    &:hover {
+      background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+      transform : scale(1.1)
+    }
   }
   
   @media (min-width : 1000px) {

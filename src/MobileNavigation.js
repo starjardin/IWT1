@@ -26,32 +26,43 @@ const MobileNavigationStyles = styled.nav`
       }
     }
   }
-
+    
   @media (min-width : 720px) {
     position : initial;
+    transform : none;
+    
     ul {
-      display : flex;
+      display : flex !important;
+      justify-content : flex-end;
     }
   }
 `
 
-export default function MobileNavigation({ setIsNavigationOpen, isNavigationOpen }) {
-  console.log(isNavigationOpen);
+const IcocCloseStyles = styled.div`
+  img {
+    width : 1rem;
+    height : 1rem;
+  }
+`
+
+export default function MobileNavigation({ setIsNavigationOpen, isNavigationOpen, display }) {
   return (
     <>
       <HeaderStyles
         className="header"
       >
           <img src={Logo} className="header-img"/>
-        <span
+        <IcocCloseStyles
           className="navigation"
           onClick={() => { setIsNavigationOpen(!isNavigationOpen) }}
         >
-          <img src={ IconClose }/>
-        </span>
+          <img src={ IconClose } className='icon-close'/>
+        </IcocCloseStyles>
       </HeaderStyles>
       <MobileNavigationStyles >
-        <ul>
+        <ul style={ {
+          display: isNavigationOpen ? 'block' : 'none'
+        }}>
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
