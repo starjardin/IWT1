@@ -89,14 +89,34 @@ const FooterStyles = styled.div`
   @media (min-width : 1000px) {
     display : grid;
     grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));
+    .footer-icons {
+      display: flex;
+      flex-direction : column;
+      img {
+        width : 100%;
+        height : 2rem;
+      }
+    }
+  }
+`
+
+const TextNavigationStyles = styled.ul`
+  display : grid;
+  grid-template-columns : repeat(auto-fill, minmax(230px, 1fr));
+  @media (max-width : 720px) {
+    display: flex;
+    flex-direction : column;
+    justify-content : center;
   }
 `
 
 export default function Footer() {
   return (
     <FooterStyles>
-      <img src={Logo} alt="logo" />
-      <IconNavigation />
+      <div className="footer-icons">
+        <img src={Logo} alt="logo" />
+        <IconNavigation />
+      </div>
       <TextNavigation />
       <div>
         <button
@@ -112,14 +132,14 @@ export default function Footer() {
 
 const TextNavigation = () => {
   return <nav>
-          <ul className="anchor-texts">
+          <TextNavigationStyles className="anchor-texts">
             <li><a href="/about-us">About Us</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/careers">Careers</a></li>
             <li><a href="/support">Support</a></li>
             <li><a href="/privacy-policy">Privacy Policy</a></li>
-          </ul>
+          </TextNavigationStyles>
         </nav>
 }
 

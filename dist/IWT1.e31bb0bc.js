@@ -32084,8 +32084,18 @@ var _iconPinterest = _interopRequireDefault(require("../images/icon-pinterest.sv
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  display : grid;\n  grid-template-columns : repeat(auto-fill, minmax(230px, 1fr));\n  @media (max-width : 720px) {\n    display: flex;\n    flex-direction : column;\n    justify-content : center;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top: 48px;\n  text-align : center;\n  img {\n    width : 20%;\n    margin : auto;\n    filter : brightness(0) invert(1);\n    padding-bottom : 35px;\n  }\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  ul {\n    padding : 0 0 48px 0;\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n        color: hsl(0, 0%, 100%);\n        font-style: 16px;\n        padding : 5px;\n        display : inline-block;\n        font-weight : 600;\n        cursor: pointer;\n      }\n      \n      a:hover {\n        background-color : hsl(233, 56%, 24%);\n        color : hsl(0, 10%, 70%);\n        transform : scale(1.1)\n      }\n    }\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    justify-content: center;\n    padding-bottom : 20px;\n    span {\n      visibility : hidden;\n    }\n  }\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n    cursor: pointer;\n    transition : .5s ease;\n    &:hover {\n      background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n      transform : scale(1.1)\n    }\n  }\n  \n  @media (min-width : 1000px) {\n    display : grid;\n    grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(233, 26%, 24%);\n  padding-top: 48px;\n  text-align : center;\n  img {\n    width : 20%;\n    margin : auto;\n    filter : brightness(0) invert(1);\n    padding-bottom : 35px;\n  }\n  .icon {\n    display : inline-block;\n    width : 2rem;\n    height : 2rem;\n    background-repeat : no-repeat;\n  }\n\n  ul {\n    padding : 0 0 48px 0;\n    li {\n      list-style : none;\n      a {\n        text-decoration : none;\n        color: hsl(0, 0%, 100%);\n        font-style: 16px;\n        padding : 5px;\n        display : inline-block;\n        font-weight : 600;\n        cursor: pointer;\n      }\n      \n      a:hover {\n        background-color : hsl(233, 56%, 24%);\n        color : hsl(0, 10%, 70%);\n        transform : scale(1.1)\n      }\n    }\n  }\n\n  .facebook {\n    background-image : url(", ");\n  }\n  .youtube {\n    background-image : url(", ");\n  }\n  .twitter {\n    background-image : url(", ");\n  }\n  .pinterest {\n    background-image : url(", ");\n  }\n  .instagram {\n    background-image : url(", ");\n  }\n\n  .icon-navigations {\n    display : flex;\n    justify-content: center;\n    padding-bottom : 20px;\n    span {\n      visibility : hidden;\n    }\n  }\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n    cursor: pointer;\n    transition : .5s ease;\n    &:hover {\n      background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n      transform : scale(1.1)\n    }\n  }\n  \n  @media (min-width : 1000px) {\n    display : grid;\n    grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));\n    .footer-icons {\n      display: flex;\n      flex-direction : column;\n      img {\n        width : 100%;\n        height : 2rem;\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32098,18 +32108,22 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var FooterStyles = _styledComponents.default.div(_templateObject(), _iconFacebook.default, _iconYoutube.default, _iconTwitter.default, _iconPinterest.default, _iconInstagram.default);
 
+var TextNavigationStyles = _styledComponents.default.ul(_templateObject2());
+
 function Footer() {
-  return /*#__PURE__*/_react.default.createElement(FooterStyles, null, /*#__PURE__*/_react.default.createElement("img", {
+  return /*#__PURE__*/_react.default.createElement(FooterStyles, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer-icons"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: _logo.default,
     alt: "logo"
-  }), /*#__PURE__*/_react.default.createElement(IconNavigation, null), /*#__PURE__*/_react.default.createElement(TextNavigation, null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+  }), /*#__PURE__*/_react.default.createElement(IconNavigation, null)), /*#__PURE__*/_react.default.createElement(TextNavigation, null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "request"
   }, "Request Invite")));
 }
 
 var TextNavigation = function TextNavigation() {
-  return /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("ul", {
+  return /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement(TextNavigationStyles, {
     className: "anchor-texts"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "/about-us"
