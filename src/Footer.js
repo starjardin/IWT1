@@ -17,6 +17,7 @@ const FooterStyles = styled.div`
     margin : auto;
     filter : brightness(0) invert(1);
     padding-bottom : 35px;
+    cursor: pointer;
   }
   .icon {
     display : inline-block;
@@ -37,11 +38,10 @@ const FooterStyles = styled.div`
         display : inline-block;
         font-weight : 600;
         cursor: pointer;
+        transition : .2s ease;
       }
       
       a:hover {
-        background-color : hsl(233, 56%, 24%);
-        color : hsl(0, 10%, 70%);
         transform : scale(1.1)
       }
     }
@@ -88,13 +88,25 @@ const FooterStyles = styled.div`
   
   @media (min-width : 1000px) {
     display : grid;
-    grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns : repeat(3, 1fr);
+
     .footer-icons {
       display: flex;
       flex-direction : column;
+      align-items : center;
+      justify-content : space-between;
       img {
-        width : 100%;
-        height : 2rem;
+        width : 40%;
+        height : 50%;
+        margin : 0;
+      }
+    }
+    .request {
+      margin : 0 0 1rem 0;
+    }
+    .btn-container {
+      p {
+        color : #fff;
       }
     }
   }
@@ -102,8 +114,12 @@ const FooterStyles = styled.div`
 
 const TextNavigationStyles = styled.ul`
   display : grid;
-  grid-template-columns : repeat(auto-fill, minmax(230px, 1fr));
-  @media (max-width : 720px) {
+  grid-template-columns : repeat(auto-fill, minmax(160px, 1fr));
+  a:hover {
+    background-color : hsl(233, 56%, 24%);
+    color : hsl(0, 10%, 70%);
+  }
+  @media (max-width : 1000px) {
     display: flex;
     flex-direction : column;
     justify-content : center;
@@ -118,13 +134,14 @@ export default function Footer() {
         <IconNavigation />
       </div>
       <TextNavigation />
-      <div>
+      <div className="btn-container">
         <button
           type="button"
           className="request"
         >
           Request Invite
         </button>
+        <p>&#x40; Easybank. All Rights Reserved</p>
       </div>
     </FooterStyles>
   )
