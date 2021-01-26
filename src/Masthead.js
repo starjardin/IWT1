@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import BgIntroMobile from '../images/bg-intro-mobile.svg'
+import BgIntroDesktop from '../images/bg-intro-desktop.svg'
 
 import MockUps from '../images/image-mockups.png'
 
@@ -42,18 +43,27 @@ const MastheadStyles = styled.div`
   }
 
   .masthead-header {
-    background-image : url(${BgIntroMobile});
-    background-repeat : no-repeat;
-    background-position : top;
-    background-size : 100% 53%;
+    img {
+      background-image : url(${BgIntroMobile});
+      background-repeat : no-repeat;
+      background-position : top;
+      background-size : 100% 53%;
+    }
   }
 
-  @media (min-width : 1444px) {
+  @media (min-width : 1244px) {
     .masthead-header {
       display : flex;
       flex-direction : row-reverse;
       align-items : center;
       max-height : 50vh;
+      img {
+        background-image : url(${BgIntroDesktop});
+        background-position: 0% 0%;
+        background-size: cover;
+        padding-left: 10rem;
+        padding-bottom: 0rem;
+      }
     }
 
     .masthead-img {

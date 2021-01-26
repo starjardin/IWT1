@@ -46427,6 +46427,8 @@ function LastArticle() {
 }
 },{"react":"node_modules/react/index.js","../images/image-currency.jpg":"images/image-currency.jpg","../images/image-confetti.jpg":"images/image-confetti.jpg","../images/image-plane.jpg":"images/image-plane.jpg","../images/image-restaurant.jpg":"images/image-restaurant.jpg","./LatestArticleStyles":"src/LatestArticleStyles.js"}],"images/bg-intro-mobile.svg":[function(require,module,exports) {
 module.exports = "/bg-intro-mobile.2783d013.svg";
+},{}],"images/bg-intro-desktop.svg":[function(require,module,exports) {
+module.exports = "/bg-intro-desktop.d745898a.svg";
 },{}],"images/image-mockups.png":[function(require,module,exports) {
 module.exports = "/image-mockups.82980908.png";
 },{}],"src/Masthead.js":[function(require,module,exports) {
@@ -46443,12 +46445,14 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _bgIntroMobile = _interopRequireDefault(require("../images/bg-intro-mobile.svg"));
 
+var _bgIntroDesktop = _interopRequireDefault(require("../images/bg-intro-desktop.svg"));
+
 var _imageMockups = _interopRequireDefault(require("../images/image-mockups.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-29%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n    cursor: pointer;\n    transition : .5s ease;\n    &:hover {\n      background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n      transform : scale(1.1)\n    }\n  }\n\n  .masthead-header {\n    background-image : url(", ");\n    background-repeat : no-repeat;\n    background-position : top;\n    background-size : 100% 53%;\n  }\n\n  @media (min-width : 1444px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-29%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .request {\n    padding : 0.7rem 1.5rem;\n    color : #fff;\n    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n    border : none;\n    border-radius : 25px;\n    margin : 2rem 0;\n    cursor: pointer;\n    transition : .5s ease;\n    &:hover {\n      background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));\n      transform : scale(1.1)\n    }\n  }\n\n  .masthead-header {\n    img {\n      background-image : url(", ");\n      background-repeat : no-repeat;\n      background-position : top;\n      background-size : 100% 53%;\n    }\n  }\n\n  @media (min-width : 1244px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n      img {\n        background-image : url(", ");\n        background-position: 0% 0%;\n        background-size: cover;\n        padding-left: 10rem;\n        padding-bottom: 0rem;\n      }\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46459,7 +46463,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var MastheadStyles = _styledComponents.default.div(_templateObject(), _bgIntroMobile.default);
+var MastheadStyles = _styledComponents.default.div(_templateObject(), _bgIntroMobile.default, _bgIntroDesktop.default);
 
 function Masthead() {
   return /*#__PURE__*/_react.default.createElement(MastheadStyles, {
@@ -46478,7 +46482,7 @@ function Masthead() {
     className: "btn request"
   }, "Request invite"))));
 }
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/bg-intro-mobile.svg":"images/bg-intro-mobile.svg","../images/image-mockups.png":"images/image-mockups.png"}],"images/icon-online.svg":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../images/bg-intro-mobile.svg":"images/bg-intro-mobile.svg","../images/bg-intro-desktop.svg":"images/bg-intro-desktop.svg","../images/image-mockups.png":"images/image-mockups.png"}],"images/icon-online.svg":[function(require,module,exports) {
 module.exports = "/icon-online.8662f84e.svg";
 },{}],"images/icon-budgeting.svg":[function(require,module,exports) {
 module.exports = "/icon-budgeting.79afbef5.svg";
