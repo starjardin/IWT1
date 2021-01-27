@@ -4,6 +4,10 @@ export const WhyChooseEasybankStyles = styled.div`
   background-color: hsl(220, 16%, 96%);
   text-align : center;
   padding : 5rem 1rem;
+  .container {
+    max-width : 1600px;
+    margin : auto;
+  }
 
   .heading {
     font-size : 27px;
@@ -26,7 +30,7 @@ export const WhyChooseEasybankStyles = styled.div`
     font-size : 18px;
   }
 
-  @media (min-width : 1444px) {
+  @media (min-width : 1000px) {
     text-align : start;
     .why-we-choose-container {
       display : flex;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { IoMenuOutline } from "react-icons/io"
+import { IoIosMenu } from "react-icons/io"
+import { ButtonRequestStyles } from './Masthead'
 
 import Logo from '../images/logo.svg'
 import MobileNavigation from './MobileNavigation'
@@ -13,6 +14,8 @@ export const HeaderStyles = styled.div`
   justify-content : space-between;
   padding : 1rem;
   align-items : center;
+  max-width : 1600px;
+  margin : auto;
 
   .header-img {
     width : 50%;
@@ -33,6 +36,9 @@ export const HeaderStyles = styled.div`
     .navigation {
       display: none;
     }
+    .header-img {
+      width : 30%;
+    }
   }
 `
 export default function Header() {
@@ -40,8 +46,8 @@ export default function Header() {
   return (
     <>
       <div className="header-container">
-        {
-          isNavigationOpen
+        <div className="container">
+          { isNavigationOpen
             ? <MobileNavigation
               setIsNavigationOpen={setIsNavigationOpen}
               isNavigationOpen={isNavigationOpen}
@@ -49,20 +55,25 @@ export default function Header() {
             : <HeaderStyles
               className="header"
             >
-                <img src={Logo} className="header-img"/>
-              <p
+              <img src={Logo} className="header-img"/>
+              <IoIosMenu
                 className="navigation"
                 onClick={ () => { setIsNavigationOpen(!isNavigationOpen) } }
-              >
-                open
-              </p>
+              />
               <MobileNavigation
                 setIsNavigationOpen={setIsNavigationOpen}
                 isNavigationOpen={ isNavigationOpen }
                 display={isNavigationOpen ? "none" : "block"}
               />
+              <ButtonRequestStyles
+                type="button"
+                className="none"
+              >
+                Request invite
+              </ButtonRequestStyles>
             </HeaderStyles>
-        }
+          }
+        </div>
       </div>
     </>
   )

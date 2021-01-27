@@ -39,7 +39,8 @@ export default function WhyChooseEasybank() {
 
   return (
     <WhyChooseEasybankStyles>
-      <header className="header">
+      <div className="container">
+        <header className="header">
         <h3 className="heading">Why choose Easybank</h3>
         <p className="paragraph">
           We leverage Open Banking to turn your bank accoutn into finacial hub. Control your finacise loke never before.
@@ -50,6 +51,7 @@ export default function WhyChooseEasybank() {
         {ResonsToChooseEasybank(simpleBudgeting)}
         {ResonsToChooseEasybank(fastOnBoarding)}
         {ResonsToChooseEasybank(openApi)}
+      </div>
       </div>
     </WhyChooseEasybankStyles>
   )

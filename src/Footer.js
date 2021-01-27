@@ -12,6 +12,10 @@ const FooterStyles = styled.div`
   background-color : hsl(233, 26%, 24%);
   padding-top: 48px;
   text-align : center;
+  .container {
+    max-width : 1600px;
+    margin : auto;
+  }
   img {
     width : 20%;
     margin : auto;
@@ -87,26 +91,28 @@ const FooterStyles = styled.div`
   }
   
   @media (min-width : 1000px) {
-    display : grid;
-    grid-template-columns : repeat(3, 1fr);
+    .container {
+      display : grid;
+      grid-template-columns : repeat(3, 1fr);
 
-    .footer-icons {
-      display: flex;
-      flex-direction : column;
-      align-items : center;
-      justify-content : space-between;
-      img {
-        width : 40%;
-        height : 50%;
-        margin : 0;
+      .footer-icons {
+        display: flex;
+        flex-direction : column;
+        align-items : center;
+        justify-content : space-between;
+        img {
+          width : 40%;
+          height : 50%;
+          margin : 0;
+        }
       }
-    }
-    .request {
-      margin : 0 0 1rem 0;
-    }
-    .btn-container {
-      p {
-        color : #fff;
+      .request {
+        margin : 0 0 1rem 0;
+      }
+      .btn-container {
+        p {
+          color : #fff;
+        }
       }
     }
   }
@@ -129,19 +135,21 @@ const TextNavigationStyles = styled.ul`
 export default function Footer() {
   return (
     <FooterStyles>
-      <div className="footer-icons">
-        <img src={Logo} alt="logo" />
-        <IconNavigation />
-      </div>
-      <TextNavigation />
-      <div className="btn-container">
-        <button
-          type="button"
-          className="request"
-        >
-          Request Invite
-        </button>
-        <p>&#x40; Easybank. All Rights Reserved</p>
+      <div className="container">
+        <div className="footer-icons">
+          <img src={Logo} alt="logo" />
+          <IconNavigation />
+        </div>
+        <TextNavigation />
+        <div className="btn-container">
+          <button
+            type="button"
+            className="request"
+          >
+            Request Invite
+          </button>
+          <p>&#x40; Easybank. All Rights Reserved</p>
+        </div>
       </div>
     </FooterStyles>
   )

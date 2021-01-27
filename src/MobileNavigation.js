@@ -30,6 +30,8 @@ const MobileNavigationStyles = styled.nav`
   @media (min-width : 720px) {
     position : initial;
     transform : none;
+    width : 20%;
+    right : 0;
     
     ul {
       display : flex !important;
@@ -45,7 +47,11 @@ const IcocCloseStyles = styled.div`
   }
 `
 
-export default function MobileNavigation({ setIsNavigationOpen, isNavigationOpen, display }) {
+export default function MobileNavigation({
+  setIsNavigationOpen,
+  isNavigationOpen,
+  display
+}) {
   return (
     <>
       <HeaderStyles

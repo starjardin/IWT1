@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
 export const LatestArticleStyles = styled.div`
+  .container {
+    max-width : 1600px;
+    margin : auto;  
+  }
+  
   background-color : hsl(0, 0%, 98%);
   padding : 1.5rem;
   .card {
@@ -23,11 +28,13 @@ export const LatestArticleStyles = styled.div`
   }
 
   @media (min-width : 1444px) {
-    display : flex;
-    gap : 2rem;
-    img {
-      width : 100%;
-      height : 38%;
+    .container {
+      display : flex;
+      gap : 2rem;
+      img {
+        width : 100%;
+        height : 38%;
+      }
     }
   }
 `

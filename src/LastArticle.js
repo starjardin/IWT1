@@ -50,10 +50,12 @@ export default function LastArticle() {
     <>
       {/* <h2>Latest Articles</h2> */}
       <LatestArticleStyles>
-        {LastArticleFunc(currency)} 
-        {LastArticleFunc(restaurant)} 
-        {LastArticleFunc(plane)} 
-        {LastArticleFunc(confetti)} 
+        <div className="container">
+          {LastArticleFunc(currency)} 
+          {LastArticleFunc(restaurant)} 
+          {LastArticleFunc(plane)} 
+          {LastArticleFunc(confetti)} 
+        </div>
       </LatestArticleStyles>
     </>
   )
