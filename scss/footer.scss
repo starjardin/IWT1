@@ -1,0 +1,115 @@
+footer {
+  background-color : hsl(233, 26%, 24%);
+  padding-top: 48px;
+  text-align : center;
+  .container {
+    max-width : 1600px;
+    margin : auto;
+  }
+  img {
+    width : 20%;
+    margin : auto;
+    filter : brightness(0) invert(1);
+    padding-bottom : 35px;
+    cursor: pointer;
+  }
+  .icon {
+    display : inline-block;
+    width : 2rem;
+    height : 2rem;
+    background-repeat : no-repeat;
+  }
+
+  ul {
+    padding : 0 0 48px 0;
+    li {
+      list-style : none;
+      a {
+        text-decoration : none;
+        color: hsl(0, 0%, 100%);
+        font-style: 16px;
+        padding : 5px;
+        display : inline-block;
+        font-weight : 600;
+        cursor: pointer;
+        transition : .2s ease;
+      }
+      
+      a:hover {
+        transform : scale(1.1)
+      }
+    }
+  }
+  
+  .icon-navigations {
+    display : flex;
+    justify-content: center;
+    padding-bottom : 20px;
+    span {
+      visibility : hidden;
+    }
+  }
+  
+.facebook {
+  background-image : url('../images/icon-facebook.svg');
+}
+.youtube {
+  background-image : url('../images/icon-youtube.svg');
+}
+.twitter {
+  background-image : url('../images/icon-twitter.svg');
+}
+.pinterest {
+  background-image : url('../images/icon-pinterest.svg');
+}
+.instagram {
+  background-image : url('../images/icon-instagram.svg');
+}
+
+
+
+  
+  @media (min-width : 1000px) {
+    .container {
+      display : grid;
+      grid-template-columns : repeat(3, 1fr);
+
+      .footer-icons {
+        display: flex;
+        flex-direction : column;
+        align-items : center;
+        justify-content : space-between;
+        img {
+          width : 40%;
+          height : 50%;
+          margin : 0;
+        }
+      }
+      .request {
+        margin : 0 0 1rem 0;
+      }
+      .btn-container {
+        p {
+          color : #fff;
+        }
+      }
+    }
+  }  
+}
+
+
+button {
+  padding : 0.7rem 1.5rem;
+  color : #fff;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border : none;
+  border-radius : 25px;
+  margin : 2rem 0;
+  cursor: pointer;
+  transition : .5s ease;
+  &:hover {
+    background-image : linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    transform : scale(1.1)
+  }
+}
+

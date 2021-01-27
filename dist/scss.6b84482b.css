@@ -1,0 +1,118 @@
+body {
+  font-family: "Public Sans";
+  margin: auto;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #2d314d;
+  padding-top: 48px;
+  text-align: center;
+}
+footer .container {
+  max-width: 1600px;
+  margin: auto;
+}
+footer img {
+  width: 20%;
+  margin: auto;
+  filter: brightness(0) invert(1);
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+footer .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+}
+footer ul {
+  padding: 0 0 48px 0;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-style: 16px;
+  padding: 5px;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+footer ul li a:hover {
+  transform: scale(1.1);
+}
+footer .icon-navigations {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+footer .icon-navigations span {
+  visibility: hidden;
+}
+footer .facebook {
+  background-image: url("/icon-facebook.db88fd38.svg");
+}
+footer .youtube {
+  background-image: url("/icon-youtube.8e30d3e6.svg");
+}
+footer .twitter {
+  background-image: url("/icon-twitter.9dcd00ee.svg");
+}
+footer .pinterest {
+  background-image: url("/icon-pinterest.6b47e241.svg");
+}
+footer .instagram {
+  background-image: url("/icon-instagram.55128b72.svg");
+}
+@media (min-width: 1000px) {
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .container .footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .container .footer-icons img {
+    width: 40%;
+    height: 50%;
+    margin: 0;
+  }
+  footer .container .request {
+    margin: 0 0 1rem 0;
+  }
+  footer .container .btn-container p {
+    color: #fff;
+  }
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border: none;
+  border-radius: 25px;
+  margin: 2rem 0;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+button:hover {
+  background-image: linear-gradient(to left, #31d35c, #2bb7da);
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
