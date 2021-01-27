@@ -1,0 +1,17 @@
+.logo {
+  //width: 50%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-navigation {
+  display: none;
+}
+
+#menu:checked ~ .mobile-navigation {
+  display: block;
+}

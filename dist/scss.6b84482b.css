@@ -12,6 +12,20 @@ img {
   height: 100%;
 }
 
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-navigation {
+  display: none;
+}
+
+#menu:checked ~ .mobile-navigation {
+  display: block;
+}
+
 .whywechoose {
   background-color: #f3f4f6;
   text-align: center;
