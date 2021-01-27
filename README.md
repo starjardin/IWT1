@@ -2,6 +2,8 @@
 
 ![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
 
+## https://easybank-by-tanteli-fan.netlify.app/
+
 ## The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.

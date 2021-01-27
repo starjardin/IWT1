@@ -27,13 +27,15 @@ export const LatestArticleStyles = styled.div`
     }
   }
 
-  @media (min-width : 1444px) {
+  @media (min-width : 1000px) {
     .container {
-      display : flex;
-      gap : 2rem;
-      img {
-        width : 100%;
-        height : 38%;
+      .article-wrapper {
+        display : flex;
+        gap : 2rem;
+        img {
+          width : 100%;
+          height : 38%;
+        }
       }
     }
   }

@@ -48,13 +48,15 @@ export default function LastArticle() {
 
   return (
     <>
-      {/* <h2>Latest Articles</h2> */}
       <LatestArticleStyles>
         <div className="container">
-          {LastArticleFunc(currency)} 
-          {LastArticleFunc(restaurant)} 
-          {LastArticleFunc(plane)} 
-          {LastArticleFunc(confetti)} 
+          { <h2>Latest Articles</h2> }
+          <div className="article-wrapper">
+            {LastArticleFunc(currency)} 
+            {LastArticleFunc(restaurant)} 
+            {LastArticleFunc(plane)} 
+            {LastArticleFunc(confetti)} 
+          </div>
         </div>
       </LatestArticleStyles>
     </>

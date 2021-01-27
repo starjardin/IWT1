@@ -10,6 +10,7 @@ const MastheadStyles = styled.div`
   background-color : hsl(0, 0%, 98%);
   text-align : center;
   padding-bottom : 5rem;
+  
   .container {
     max-width : 1600px;
     margin : auto;

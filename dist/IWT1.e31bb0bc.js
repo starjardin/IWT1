@@ -46206,7 +46206,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n  .container {\n    max-width : 1600px;\n    margin : auto;\n  }\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-29%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .masthead-header {\n    img {\n      background-image : url(", ");\n      background-repeat : no-repeat;\n      background-position : top;\n      background-size : 100% 53%;\n    }\n  }\n\n  @media (min-width : 1000px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n      img {\n        background-image : url(", ");\n        background-position: 0% 0%;\n        background-size: cover;\n        padding-left: 10rem;\n        padding-bottom: 0rem;\n        transform : translate(30%, 10%);\n      }\n    }\n    \n    .text-container {\n      max-width : 450px;\n      text-align : start;\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color : hsl(0, 0%, 98%);\n  text-align : center;\n  padding-bottom : 5rem;\n  \n  .container {\n    max-width : 1600px;\n    margin : auto;\n  }\n\n  .masthead-img {\n    display : inline-block;\n    transform : translateY(-29%);\n  }\n\n  .masthead-heading {\n    font-size : 40px;\n    font-weight : 700;\n    line-height : 52px;\n    color : hsl(233, 26%, 24%);\n  }\n\n  .masthead-paragraph {\n    color : hsl(233, 8%, 62%);\n  }\n\n  .masthead-header {\n    img {\n      background-image : url(", ");\n      background-repeat : no-repeat;\n      background-position : top;\n      background-size : 100% 53%;\n    }\n  }\n\n  @media (min-width : 1000px) {\n    .masthead-header {\n      display : flex;\n      flex-direction : row-reverse;\n      align-items : center;\n      max-height : 50vh;\n      img {\n        background-image : url(", ");\n        background-position: 0% 0%;\n        background-size: cover;\n        padding-left: 10rem;\n        padding-bottom: 0rem;\n        transform : translate(30%, 10%);\n      }\n    }\n    \n    .text-container {\n      max-width : 450px;\n      text-align : start;\n    }\n\n    .masthead-img {\n      transform : translateY(0);\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46433,7 +46433,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  .container {\n    max-width : 1600px;\n    margin : auto;  \n  }\n  \n  background-color : hsl(0, 0%, 98%);\n  padding : 1.5rem;\n  .card {\n    background-color : hsl(0, 0%, 100%);\n    margin-bottom : 1.5rem;\n    .last-article-img {\n      margin-bottom : 2rem;\n    }\n\n    div {\n      padding : 2rem;\n      .card-heading {\n        font-size : 27px;\n        padding : 1rem 0;\n      }\n      .card-paragraph {\n        margin-bottom : 2rem;\n      }\n    }\n  }\n\n  @media (min-width : 1444px) {\n    .container {\n      display : flex;\n      gap : 2rem;\n      img {\n        width : 100%;\n        height : 38%;\n      }\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  .container {\n    max-width : 1600px;\n    margin : auto;  \n  }\n  \n  background-color : hsl(0, 0%, 98%);\n  padding : 1.5rem;\n  .card {\n    background-color : hsl(0, 0%, 100%);\n    margin-bottom : 1.5rem;\n    .last-article-img {\n      margin-bottom : 2rem;\n    }\n\n    div {\n      padding : 2rem;\n      .card-heading {\n        font-size : 27px;\n        padding : 1rem 0;\n      }\n      .card-paragraph {\n        margin-bottom : 2rem;\n      }\n    }\n  }\n\n  @media (min-width : 1000px) {\n    .container {\n      .article-wrapper {\n        display : flex;\n        gap : 2rem;\n        img {\n          width : 100%;\n          height : 38%;\n        }\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -46510,7 +46510,9 @@ function LastArticle() {
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_LatestArticleStyles.LatestArticleStyles, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, LastArticleFunc(currency), LastArticleFunc(restaurant), LastArticleFunc(plane), LastArticleFunc(confetti))));
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Latest Articles"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "article-wrapper"
+  }, LastArticleFunc(currency), LastArticleFunc(restaurant), LastArticleFunc(plane), LastArticleFunc(confetti)))));
 }
 },{"react":"node_modules/react/index.js","../images/image-currency.jpg":"images/image-currency.jpg","../images/image-confetti.jpg":"images/image-confetti.jpg","../images/image-plane.jpg":"images/image-plane.jpg","../images/image-restaurant.jpg":"images/image-restaurant.jpg","./LatestArticleStyles":"src/LatestArticleStyles.js"}],"images/icon-online.svg":[function(require,module,exports) {
 module.exports = "/icon-online.8662f84e.svg";
