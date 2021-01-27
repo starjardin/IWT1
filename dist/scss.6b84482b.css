@@ -12,6 +12,85 @@ img {
   height: 100%;
 }
 
+.whywechoose {
+  background-color: #f3f4f6;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.whywechoose .container {
+  max-width: 1600px;
+  margin: auto;
+}
+.whywechoose .heading {
+  font-size: 27px;
+}
+.whywechoose .heading, .whywechoose .title {
+  color: #2d314d;
+  padding-block: 1rem;
+}
+.whywechoose img {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+}
+.whywechoose .paragraph {
+  color: #9698a6;
+  margin: 0 0 2rem 0;
+  font-size: 18px;
+}
+@media (min-width: 1000px) {
+  .whywechoose {
+    text-align: start;
+  }
+  .whywechoose .why-we-choose-container {
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  .whywechoose .why-we-choose-container img {
+    margin: 0;
+  }
+}
+.whywechoose .header {
+  max-width: 545px;
+}
+
+.last-article {
+  background-color: #fafafa;
+  padding: 1.5rem;
+}
+.last-article .container {
+  max-width: 1600px;
+  margin: auto;
+}
+.last-article .card {
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+.last-article .card .last-article-img {
+  margin-bottom: 2rem;
+}
+.last-article .card div {
+  padding: 2rem;
+}
+.last-article .card div .card-heading {
+  font-size: 27px;
+  padding: 1rem 0;
+}
+.last-article .card div .card-paragraph {
+  margin-bottom: 2rem;
+}
+@media (min-width: 1000px) {
+  .last-article .container .article-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+  .last-article .container .article-wrapper img {
+    width: 100%;
+    height: 38%;
+  }
+}
+
 footer {
   background-color: #2d314d;
   padding-top: 48px;
